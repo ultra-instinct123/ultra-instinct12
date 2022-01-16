@@ -1,0 +1,476 @@
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.active {
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+}
+body , html {
+    overflow-x: hidden;
+}
+/* navbar */
+.navbar {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.navbar.sticky{
+    padding: 30px 0;
+    background: crimson;
+}
+.navbar .logo h1{
+    font-size: 40px;
+}
+.navbar .nav-links li a{
+    color: rgb(32, 31, 31);
+    font-weight: bold;
+}
+.navbar .logo h1 span {
+    color: rgb(228, 82, 118);
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/blue.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background: rgb(110, 154, 236);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.header-content .text-1 span {
+    color: rgb(218, 82, 109);
+}
+.ctn {
+    padding: 8px 15px;
+    background: rgb(139, 241, 241);
+    border-radius: 30px;
+    color: rgb(46, 45, 45);
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/*profile section styling*/
+section{
+    padding: 10px 0;
+}
+.profile {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profile h2{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family:'Segoe UI',Ubuntu, 'Open Sans', sans-serif;
+}
+.profile h2::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: rgb(19, 18, 18);
+    transform: translateX(-50%);
+
+}
+.profile h2::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+    background: rgb(250, 250, 252);
+    transform: translateX(-50%);
+}
+.profile .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile .max-width .left{
+    width: 45%;
+
+}
+.profile .max-width .left img{
+    height: 450px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.profile .max-width .right{
+    width: 45%;
+
+}
+.profile .max-width .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.profile .max-width .right span{
+    color: crimson;
+}
+.profile .max-width .right p{
+    text-align: justify;
+}
+.profile .max-width .right a{
+    font-size: 20px;
+    color:whitesmoke;
+    padding: 8px 30px;
+    margin-top: 20px;
+    width: 150%;
+    height: 200vh;
+    justify-content: center;
+    background: rgb(223, 57, 90);
+    border-radius: 10px;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+}
+.profile .max-width .right a:hover{
+    color: whitesmoke;
+    background:rgb(102, 101, 101);
+}
+/*services styling*/
+section{
+    padding: 10px;
+}
+.services{
+    width: 100vw;
+    background-size: cover;
+    color: rgb(244, 246, 247);
+    background: rgb(41, 40, 40);
+}
+.services h2{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family:'Segoe UI',Ubuntu, 'Open Sans', sans-serif;
+}
+.services h2::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: rgb(247, 243, 243);
+    transform: translateX(-50%);
+
+}
+.services h2::after{
+    content: "what i provide";
+    background: rgb(41, 40, 40);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(247, 243, 243);
+    padding: 5px;
+    transform: translateX(-50%);
+}
+.services .serve-content .card1{
+    width: calc(70% - 40px);
+    background: rgb(59, 59, 59);
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px 25px;
+    cursor: pointer;
+
+}
+.services .serve-content .card2{
+    width: calc(70% - 40px);
+    position: calc(50% -10px);
+    background: #5c5ca7;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+.services .serve-content .card3{
+    width: calc(70% - 40px);
+    position: calc(50% -10px);
+    background: #404041;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+.services .serve-content .card1{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 7px 0;
+}
+.services .serve-content .card2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 7px 0;
+}
+.services .serve-content .card3{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 7px 0;
+}
+.services .serve-content .card1 .box{
+    transition: all 0.75s ease;
+}
+.services .serve-content .card1:hover{
+    transform: scale(1.05);
+    background: rgb(235, 84, 91);
+}
+.services .serve-content .card2 .box {
+    transition: all 0.75s ease;
+}
+.services .serve-content .card2:hover{
+    transform: scale(1.05);
+    background: rgb(235, 84, 91);
+}
+.services .serve-content .card3 .box{
+    transition: all 0.75s ease;
+}
+.services .serve-content .card3:hover{
+    transform: scale(1.05);
+    background: rgb(235, 84, 91);
+}
+
+
+/* events*/
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(24, 24, 26);
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.row .col img {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+
+}
+.events .row {
+    margin-top: 0px;
+
+}
+h4 {
+    font-size: 3vmin;
+    color: rgb(13, 23, 41);
+    margin: 20px auto;
+}
+p {
+    font-size: 2vmin;
+    color: rgb(35, 35, 36);
+    padding: 30px 40px;
+}
+.events .ctn {
+    margin-top: 100px;
+}
+.explore {
+    width: 90%;
+    height: 125vh;
+    background-image: url('../images/farm1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: rgb(27, 26, 26);
+}
+.explore-content h1 {
+    font-size: 7vmin;
+    margin: 50px;
+    text-align: center;
+
+}
+.explore-content .line {
+    margin-bottom: 60px;
+}
+.explore-content .ctn {
+    margin-top: 50px;
+    margin-left: 45%;
+    text-align: center;
+}
+.footer {
+    width: 100%;
+    height: 100px;
+    padding: 10px 40px;
+    margin: 0pxs;
+    background: #282844;
+    text-align: center;
+}
+.footer p {
+    color: darkgrey;
+}
+/* mobile device */
+@media (max-width: 500px){
+    .profile .max-width .right{
+        flex-direction: row;
+    }
+}
+@media (max-width: 1300px){
+    .profile .max-width .left img{
+        height: 350px;
+        width: 300px;
+    }
+
+}
+@media (max-width: 1000px){
+    .profile .max-width .left img{
+        height: 250px;
+        width: 200px;
+        margin-left: 1px;
+    }
+    
+}
+@media only screen and (max-width:850px){
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(143, 173, 228);
+        margin-top: -900px;
+        transition: all 0.75s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li{
+        margin: 30px auto;
+
+    }
+    .profile .max-width .column{
+        width: 100%;
+    }
+    .profile .max-width .column .left{
+        display: flex;
+        justify-content: center;
+        margin:-10px;
+    }
+    .profile .max-width .column .right{
+        flex: 100%;
+        justify-content: baseline;
+    }
+    .services .serve-content .card1{
+        width: 100%;
+    }
+    .services .serve-content .card2{
+        width: 100%;
+    }
+    .services .serve-content .card3{
+        width: 100%;
+    }
+    /* events*/
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    col img {
+        max-width: 90%;
+    }
+}
+/* animation */
+img {
+    transition: transform .3s ease;
+
+}
+img:hover {
+    transform: scale(1.1);
+}
+.ctn:hover {
+    transform: scale(1.1);
+    background:rgb(41, 40, 40);
+    color: rgb(223, 241, 241);
+    box-shadow: 2px 2px 5px rgba(65, 66, 66, 0.445);
+}
+li:hover {
+    color: rgb(66, 64, 64);
+    cursor: pointer;
+    transform: scale(1.5);
+}
